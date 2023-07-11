@@ -12,5 +12,5 @@ module.exports = {
   daisyui: {
     themes: ["corporate"],
   },
-  plugins: [require("daisyui")],
+  plugins: [require("@tailwindcss/typography"), require("daisyui")],
 };
