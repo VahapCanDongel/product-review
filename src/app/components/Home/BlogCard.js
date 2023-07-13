@@ -1,6 +1,7 @@
-export default function BlogCard() {
+
+export default function BlogCard({imageSrc, cardTitle, cardDescription, categoryList, postDate}) {
   return (
-    <div className="card w-[400px] bg-base-100 rounded-md">
+    <div className="card w-[400px] bg-base-100 rounded-md hover:shadow-2xl transition-all">
       <figure>
         <img
           src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/mbp-spacegray-select-202206_GEO_GB?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1664497359294"
@@ -18,8 +19,10 @@ export default function BlogCard() {
         </p>
         <div className="flex flex-col">
           <div className="card-actions justify-end mt-4 ">
-            <div className="badge badge-outline badge-primary">Technolgy</div>
-            <div className="badge badge-outline badge-info">Gaming</div>
+            {/* {categoryList.map( item => (
+              <div className="badge badge-outline badge-info">{item.categoryName}</div>
+            ))}
+            */}
           </div>
 
           <div className="ml-auto my-2">July 11, 2023</div>
